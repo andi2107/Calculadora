@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora html</title>
+</head>
+<body>
+<form name="calculadora">
+<table border="1" width="200" align="center">
+<!--esta es la 1ra fila-->
+<tr>
+<td colspan="4"><input type="text" name="pantalla"></td>
+</tr>
+
+<!--esta es la 2da fila-->
+<tr>
+    <td><input type="button" value="7" onclick="pantalla.value+='7'"></td>
+    <td><input type="button" value="8" onclick="pantalla.value+='8'"></td>
+    <td><input type="button" value="9" onclick="pantalla.value+='9'"></td>
+    <td><input type="button" value="+" onclick="pantalla.value+='+'"></td>
+    </tr>
+
+    <!--esta es la 3ra fila-->
+<tr>
+    <td><input type="button" value="4" onclick="pantalla.value+='4'"></td>
+    <td><input type="button" value="5" onclick="pantalla.value+='5'"></td>
+    <td><input type="button" value="6" onclick="pantalla.value+='6'"></td>
+    <td><input type="button" value="-" onclick="pantalla.value+='-'"></td>
+    </tr>
+
+    <!--esta es la 4ta fila-->
+<tr>
+    <td><input type="button" value="1" onclick="pantalla.value+='1'"></td>
+    <td><input type="button" value="2" onclick="pantalla.value+='2'"></td>
+    <td><input type="button" value="3" onclick="pantalla.value+='3'"></td>
+    <td><input type="button" value="x" onclick="pantalla.value+='*'"></td>
+    </tr>
+
+    <!--esta es la 5taa fila-->
+<tr>
+<td><input type="button" value="C" onclick="pantalla.value=''"</td>
+    <td><input type="button" value="0" onclick="pantalla.value+='0'"></td>
+    <td><input type="button" value="=" onclick="pantalla.value=eval(pantalla.value)"</td>
+    <td><input type="button" value="/" onclick="pantalla.value+='/'"></td>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>
